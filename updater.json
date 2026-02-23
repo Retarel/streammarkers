@@ -1,0 +1,11 @@
+{
+  "version": "v0.1.2",
+  "notes": "Полноценный релиз приложения!",
+  "pub_date": "2026-02-23T22:30:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTdUV3MFJYWXZsNUxpMHoxNnBCbkJyU2JBaWFMa2hJTEhTY1JDbFpIL0NHNGtmOGRjYU4yQUtaZy91anR1YnF3dXlpaFRIK0FKS0xiODRUK3RiTCszRXJuYUo4RHc2elE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcxODc0MTU5CWZpbGU6c3RyZWFtbWFya2Vyc18wLjEuMl94NjQtc2V0dXAuZXhlCkgvRWdUbjdFUy93Ty84eVF6L2NaWjZ6WXJNMUhvUEZITUpvOGNYMFdRcXY1Z3NmNFNZN1V3VXYvSVg0cVFqMnVGOFRNQ2JwdzNmQUIzaTNleTV2akF3PT0K",
+      "url": "https://github.com/Retarel/streammarkers/releases/download/v0.1.2/streammarkers_0.1.2_x64-setup.exe"
+    }
+  }
+}
