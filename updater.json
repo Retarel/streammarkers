@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "notes": "Pairing-based auth via Peakster Pro account. Multi-source support (each copy of StreamMarkers can have its own name, manageable from Peakster). Markers are now stored under your Peakster account at users/{uid}/markers and visible in Peakster as regular moments with source attribution.",
-  "pub_date": "2026-04-28T20:20:00Z",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTdUV3MFJYWXZsNUNHd2haQzZvS0ZqUTMzUndINEtDK0RnUFUzTWZ5ditxRUdYWVJKM2tGT2ljTnZ4SDBnakcwVGhRcEtURCtScXpBaWRxWjdDUmEzaWt5eW9zUkFQNEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3Mzk2NjY0CWZpbGU6c3RyZWFtbWFya2Vyc18wLjIuMF94NjQtc2V0dXAuZXhlCjcreTFjMU1EYU1LZGNRV210TVlDNFhLTHFXSGdxYlRwamkveW4vUDZqUjc5R0UrSks1ZWc4QUNWQjJKdHdkSUZ6MVY3bjdVWFZybmNFb2tkcnlkMEN3PT0K",
-      "url": "https://github.com/Retarel/streammarkers/releases/download/v0.2.0/streammarkers_0.2.0_x64-setup.exe"
-    }
-  }
+    "version":  "0.2.1",
+    "notes":  "v0.2.1 — Автозапуск и запуск в трее. В Настройках появились два новых тоггла: «Автозапуск» (запускать при старте Windows) и «Запуск в трее» (скрывать окно при закрытии вместо выхода + стартовать в фоне). По умолчанию выключены.",
+    "pub_date":  "2026-05-04T20:50:29Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTdUV3MFJYWXZsNUtzL2lxWkxHRjJBU3lxaDM0ZkhSQzhSd1V5ZlFFTm5pZ2wxTkpkRXpIaytzeGw4Yk9Vc0NqOER4ajYyT3U0Yk04QUM2OEt1a0U0Zm8yUzY3QlZ2Qnc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3OTI3NzUwCWZpbGU6c3RyZWFtbWFya2Vyc18wLjIuMV94NjQtc2V0dXAuZXhlCnNMQ0ZpSWR5ZVBvNEVZLytHdlFieCt5YzdYcmhzYjdPMjlyUmRVNjhhWVpQUXhNWFlWaEF1TWEyck16a2FWZVZjcUxTVUZrRWJia3BkdUFHTlV6UkJnPT0K",
+                                             "url":  "https://github.com/Retarel/streammarkers/releases/download/v0.2.1/streammarkers_0.2.1_x64-setup.exe"
+                                         }
+                  }
 }
