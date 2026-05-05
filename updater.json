@@ -1,11 +1,11 @@
 {
-    "version":  "0.2.2",
-    "notes":  "v0.2.2 — Описание обновлений теперь видно в карточке апдейта.\n\nРаньше при появлении нового релиза в боковой панели показывалась только версия — без описания, что именно меняется. Теперь под версией отображается текст из release notes.\n\nИз v0.2.1 (на случай если ещё не обновился): добавлены тоггл «Автозапуск» (запускать при старте Windows) и тоггл «Запуск в трее» (скрывать окно при закрытии вместо выхода + стартовать в фоне). Оба в Настройках, по умолчанию выключены.",
-    "pub_date":  "2026-05-04T21:03:01Z",
-    "platforms":  {
-                      "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTdUV3MFJYWXZsNUNRNlNvSVB5WGRMTHNyQjA2Q3BFVTRtdzQ4bFBQcmgrYUVJSXlBcmw0NStwUTFSdmg4bzMvTUliYlozQVZzci9uRkV0MHliWU9nbFZpN2JxL1VHeVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc3OTI4Mjg3CWZpbGU6c3RyZWFtbWFya2Vyc18wLjIuMl94NjQtc2V0dXAuZXhlCmtyVUZkditWaWt5UFdVSno1cjY3YXNjRkc0alRmd3hYSjJkZ0JtdDR1dmRaeGRNdVFWb29JdHd1Rjg2Q21rS3VwR2w1UFdOS0lwV0gzczV6a2tUM0NnPT0K",
-                                             "url":  "https://github.com/Retarel/streammarkers/releases/download/v0.2.2/streammarkers_0.2.2_x64-setup.exe"
-                                         }
-                  }
+  "version": "0.2.3",
+  "notes": "v0.2.3 — устойчивость привязки и докатка локальных меток.\n\n• Single-instance защита: вторая копия (от race autostart + updater relaunch) теперь молча выходит и фокусит окно первой. Это убирает класс багов «два значка в трее → хоткей не ставит метку».\n\n• Авто-ретрай меток текущей сессии: если хоткей нажат пока Firebase auth ещё восстанавливается из IDB на старте, метка раньше навсегда оставалась локальной. Теперь после восстановления auth такие метки автоматически досылаются.\n\n• Кнопка «Отправить в Peakster» в табе Таймкоды: оранжевый баннер сверху списка предлагает одной кнопкой отправить накопленные локальные метки (без облачка) в Peakster.\n\n• Баннер «Сессия привязки отозвана» в Настройках: если приложение помнит привязку, но Firebase больше не пускает — теперь явно показывается что произошло, вместо пустого экрана ввода кода.\n\nИНФРАСТРУКТУРА PEAKSTER (применяется на сервере):\n\n• Закрыта дыра в Firestore-правилах: запись метки теперь требует активной Pro-подписки. Раньше копия привязанная во время Pro могла продолжать писать после отмены подписки.\n\n• Изменено поведение «refresh claims» в админке Peakster — оно больше не убивает StreamMarkers-сессии как побочный эффект (было источником прежних багов «синхронизация молча умерла»).\n\nПОСЛЕ ОБНОВЛЕНИЯ: если копия показывает баннер «Сессия привязки отозвана» — создайте новый код в Peakster и введите его. Локальные метки сохранятся; после привязки нажмите «Отправить в Peakster» в табе Таймкоды чтобы догнать backlog.",
+  "pub_date": "2026-05-05T17:13:30Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTdUV3MFJYWXZsNUNrWHA0OHVxK25XVVJxUERpTlNiKzQ4dnJMY25oS0JpeVpiZE5RNWJlOFRnNnRJK2pCdVp2Nkk0MDZNeGxUL3JleWlQaklPWFZkenR6UTV2OGVzaEFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4MDAxMTU1CWZpbGU6c3RyZWFtbWFya2Vyc18wLjIuM194NjQtc2V0dXAuZXhlClNTL0ZDTXFHeGMwYVh3OTRMYVNaM3BaQ3BJUzBpMG1OMVkxdUp5eVFOVUVsdGF3ck8walRZbWs2TEhmbHN6QmlMTW9Tb3dHbHNQeW1lY0p4Uyt3aUFRPT0K",
+      "url": "https://github.com/Retarel/streammarkers/releases/download/v0.2.3/streammarkers_0.2.3_x64-setup.exe"
+    }
+  }
 }
